@@ -300,6 +300,7 @@ nmap <leader>gs :Gstatus<cr>
 nmap <leader>gc :Gcommit<cr>
 nmap <leader>gl :Glog<cr>
 nmap <leader>gd :Gdiff<cr>
+nmap <leader>gb :Gblame<cr>
 
 "ack binding
 let g:ackprg="ack-grep -H --nocolor --nogroup --column"
