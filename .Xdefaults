@@ -1,0 +1,59 @@
+URxvt.depth: 32
+#URxvt*background: black
+#URxvt.foreground: white
+#URxvt*transparent:true
+
+URxvt.fading: 70
+URxvt.fadeColor: [0]black
+
+URxvt.saveLines: 32767
+URxvt.scrollBar: false
+
+# tabs and links
+#URxvt.perl-ext-common: default,tabbed,matcher
+URxvt.perl-ext-common: default,matcher
+
+URxvt*font: xft:Inconsolata-dz:size=8:antialias=true:hinting=true
+
+
+URxvt*foreground: #f2f2f2
+#URxvt*background: #101010
+URxvt*background: #000000
+
+! Normal
+! color0    black
+! color1    red
+! color2    green
+! color3    yellow
+! color4    blue
+! color5    purple
+! color6    cyan
+! color7    white
+
+URxvt*color0:    #6c6c6c
+URxvt*color1:    #e9897c
+URxvt*color2:    #b6e77d
+URxvt*color3:    #ecebbe
+URxvt*color4:    #a9cdeb
+URxvt*color5:    #ea96eb
+URxvt*color6:    #c9caec
+URxvt*color7:    #f2f2f2
+
+! Light
+! color8    black
+! color9    red
+! color10    green
+! color11    yellow
+! color12    blue
+! color13    purple
+! color14    cyan
+! color15    white
+
+URxvt*color8:    #747474
+URxvt*color9:    #f99286
+URxvt*color10:    #c3f786
+URxvt*color11:    #fcfbcc
+URxvt*color12:    #b6defb
+URxvt*color13:    #fba1fb
+URxvt*color14:    #d7d9fc
+URxvt*color15:    #e2e2e2
