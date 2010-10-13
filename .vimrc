@@ -156,7 +156,7 @@ map <leader>r :ruby finder.rescan!<CR>
 map ,t :Rake<CR>
 
 let g:proj_flags="imstg"
-let g:fuzzy_roots="app\nlib\nconfig\npublic/javascripts\npublic/stylesheets\nfeatures\nspec"
+let g:fuzzy_roots="app\nlib\nconfig\npublic/javascripts\npublic/stylesheets\nfeatures\nspec\nsrc\ntest"
 let g:fuzzy_ceiling=30000
 let g:fuzzy_matching_limit=25
 let g:fuzzy_ignore="gems/**, log/**, public/**, vendor/**, public/images/**, public/themes/**, tmp/**, *.gem, *.log, *.db, *.sqlite*, doc/**, rdoc/**, *.png, *.jp*g, *.PNG, *.JP*G, *.GIF"
