@@ -22,7 +22,7 @@ set whichwrap=h,l,~,[,]
 set backspace=indent,eol,start
 set nobackup
 set nowritebackup
-colorscheme railscasts
+colorscheme zenburn
 "disable this autocomment bullshit
 au FileType * setl fo-=cro
 "f6 to cyckle through split windows, shift f6 for backwards
