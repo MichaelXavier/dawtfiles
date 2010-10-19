@@ -54,6 +54,7 @@ export GEM_PRIVATE_KEY='/home/michael/Scripts/Ruby/Gem\ Building\ Documents/gem-
 export GEM_CERTIFICATE_CHAIN='/home/michael/Scripts/Ruby/Gem\ Building\ Documents/gem-public_cert.pem'
 export PATH=$PATH:/home/michael/.gem/ruby/1.8/bin:/home/michael/bin:/home/michael/.cabal/bin
 export EDITOR=vim
+export PAGER=less
 
 # Required by rvm
 if [[ -s /home/michael/.rvm/scripts/rvm ]] ; then source /home/michael/.rvm/scripts/rvm ; fi
