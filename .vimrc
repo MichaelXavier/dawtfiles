@@ -325,3 +325,8 @@ match gitError /^.*\s$/
 
 " Shut the hell up NERD
 let g:NERDShutUp=1
+
+" Swap word with next word
+nmap <silent> gw    "_yiw:s/\(\%#\w\+\)\(\_W\+\)\(\w\+\)/\3\2\1/<cr><c-o><c-l> *N*
+
+nnoremap <F5> :GundoToggle<CR>
