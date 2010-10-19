@@ -98,9 +98,16 @@ set path=$PWD/public/**,$PWD/**
 filetype plugin indent on " Enable filetype-specific indenting and plugins
 set sessionoptions=blank,buffers,curdir,folds,help,resize,tabpages,winsize
 set guioptions-=m
-"set statusline=%<%f\ %h%m%r%=%-20.(line=%l,col=%c%V,totlin=%L%)\%h%m%r%=%-40(,%n%Y%)\%P
 set statusline=%<%f\ %{fugitive#statusline()}\ %h%m%r%=%-20.(line=%l,col=%c%V,totlin=%L%)\%h%m%r%=%-40(,%n%Y%)\%P
+" Syntastic stuff
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_enable_signs = 1
+map <leader>e :Errors<CR>
+
 set laststatus=2
+
 
 map <C-q> :mksession! ~/.vim/.session <cr>
 map <C-//> map ,# :s/^/#/<CR>
@@ -304,7 +311,7 @@ nmap <leader>gd :Gdiff<cr>
 nmap <leader>gb :Gblame<cr>
 
 "ack binding
-let g:ackprg="ack-grep -H --nocolor --nogroup --column"
+let g:ackprg="ack-grep -H --nocolor --nogroup"
 map <leader>a :Ack
 
 "Conque shell

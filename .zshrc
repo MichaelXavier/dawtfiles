@@ -57,5 +57,3 @@ export EDITOR=vim
 
 # Required by rvm
 if [[ -s /home/michael/.rvm/scripts/rvm ]] ; then source /home/michael/.rvm/scripts/rvm ; fi
-
-alias ack="ack-grep"
