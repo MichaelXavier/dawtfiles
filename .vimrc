@@ -55,7 +55,7 @@ autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 autocmd FileType c set omnifunc=ccomplete#Complete
-autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
+"autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
 autocmd FileType ruby,perl,tex set shiftwidth=2
  
 "autocmd FileType c,cpp,java,javascript,python,xml,xhtml,html set shiftwidth=2
@@ -175,7 +175,7 @@ set cursorcolumn
 "set foldmethod=manual
 set foldmethod=syntax
 set foldnestmax=3       "deepest fold is 3 levels
-"set nofoldenable        "dont fold by default
+set nofoldenable        "dont fold by default
 
 set wildmode=list:longest   "make cmdline tab completion similar to bash
 set wildmenu                "enable ctrl-n and ctrl-p to scroll thru matches
