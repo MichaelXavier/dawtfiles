@@ -332,3 +332,6 @@ nmap <silent> gw    "_yiw:s/\(\%#\w\+\)\(\_W\+\)\(\w\+\)/\3\2\1/<cr><c-o><c-l> *
 nnoremap <F5> :GundoToggle<CR>
 
 set hlsearch
+
+"sparkup settings
+let g:sparkupNextMapping='<c-m>'
