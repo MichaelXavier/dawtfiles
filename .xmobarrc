@@ -1,16 +1,16 @@
-Config { 
+Config {
   font         = "-*-terminus-*-*-*-*-12-*-*-*-*-*-*-u",
   bgColor     = "#000000",
   fgColor     = "#FFFFFF",
   position =  Top,
   lowerOnStart = False,
-  commands     = [ 
-              Run Cpu ["<cpu0>/<cpu1>","-L","3","-H","50","-l","green","--normal","orange","--high","red"]   80,
+  commands     = [
+              Run Cpu ["<cpu0>/<cpu1>","-L","3","-H","50","-l","green","--normal","orange","--high","red"]   300,
               Run DiskU [("/", "/: <free>/<size>"), ("/home", "/home: <free>/<size>")] ["disku"] 6000,
-              Run Memory ["-t","Mem: <usedratio>%", "-l","green","--normal","orange","--high","red"] 80,
-              Run Swap ["-t","Swp: <usedratio>", "-l","green","--normal","orange","--high","red"] 80,
-              Run Battery ["-t","Bat: <left>", "-l","red","--normal","orange","--high","green"] 80,
-              Run Date "%m-%d-%Y %I:%M%p" "date" 60,
+              Run Memory ["-t","Mem: <usedratio>%", "-l","green","--normal","orange","--high","red"] 300,
+              Run Swap ["-t","Swp: <usedratio>", "-l","green","--normal","orange","--high","red"] 300,
+              Run Battery ["-t","Bat: <left>", "-l","red","--normal","orange","--high","green"] 300,
+              Run Date "%m-%d-%Y %I:%M%p" "date" 600,
               Run StdinReader
             ],
   sepChar      = "%",
