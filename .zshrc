@@ -27,11 +27,14 @@ function zle-line-init zle-keymap-select {
 zle -N zle-line-init
 zle -N zle-keymap-select
 
-#ls colorso
+#ls colors
 alias ls='ls --color=auto'
 
 #frackin linux lab
 alias linux-lab='uw1-320-lab.uwb.edu'
+
+#mixer
+alias mixer='rexima'
 
 #For cucumber with autotest
 export AUTOFEATURE=true
@@ -52,7 +55,7 @@ export RSPEC=true
 export RUBYOPT=rubygems
 export GEM_PRIVATE_KEY='/home/michael/Scripts/Ruby/Gem\ Building\ Documents/gem-private_key.pem'
 export GEM_CERTIFICATE_CHAIN='/home/michael/Scripts/Ruby/Gem\ Building\ Documents/gem-public_cert.pem'
-export PATH=$PATH:/home/michael/.gem/ruby/1.8/bin:/home/michael/bin:/home/michael/.cabal/bin
+export PATH=$PATH:/home/michael/.gem/ruby/1.8/bin:/home/michael/bin:/home/michael/.cabal/bin:/usr/local/bin:/opt/java/jre/bin
 export EDITOR=vim
 export PAGER=less
 
