@@ -335,3 +335,6 @@ set hlsearch
 
 "sparkup settings
 let g:sparkupNextMapping='<c-m>'
+
+"erlang likes 4 space tabbing
+autocmd FileType erlang setlocal sw=4 ts=4
