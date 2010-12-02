@@ -1,0 +1,12 @@
+cachedir ~/.tarsnap/cache
+keyfile ~/.tarsnap/tarsnap.key
+humanize-numbers
+
+# Exclusions
+exclude .git
+exclude *~
+exclude *.o
+exclude *.so
+exclude *.swp
+exclude *.swo
+exclude *.hi
