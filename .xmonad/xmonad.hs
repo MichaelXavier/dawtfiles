@@ -160,7 +160,6 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((modm              , xK_q     ), spawn "xmonad --recompile; xmonad --restart")
     , ((mod4Mask          , xK_b     ), sendMessage ToggleStruts)
     , ((mod4Mask .|. shiftMask, xK_z), spawn "xscreensaver-command -lock")
-    , ((0, xK_Print), spawn "scrot")
     , ((modm .|. controlMask, xK_w), spawn "xcalib -invert -alter -s 0")
     , ((modm .|. controlMask, xK_e), spawn "xcalib -invert -alter -s 1")
     , ((modm              , xK_s    ), scratchpadSpawnActionTerminal "urxvt -pe tabbed")
