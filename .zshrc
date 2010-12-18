@@ -59,5 +59,8 @@ export PATH=$PATH:/home/michael/.gem/ruby/1.8/bin:/home/michael/bin:/home/michae
 export EDITOR=vim
 export PAGER=less
 
+# MOAR CORES!
+alias make='make -j 5'
+
 # Required by rvm
 if [[ -s /home/michael/.rvm/scripts/rvm ]] ; then source /home/michael/.rvm/scripts/rvm ; fi
