@@ -338,3 +338,6 @@ let g:sparkupNextMapping='<c-m>'
 
 "erlang likes 4 space tabbing
 autocmd FileType erlang setlocal sw=4 ts=4
+
+" This command annoys me
+map K <Nop>
