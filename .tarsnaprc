@@ -10,3 +10,5 @@ exclude *.so
 exclude *.swp
 exclude *.swo
 exclude *.hi
+exclude deps
+exclude *.log
