@@ -9,7 +9,10 @@ URxvt.perl-ext-common: default,matcher
 URxvt.urlLauncher: /usr/bin/google-chrome
 URxvt.matcher.button: 1
 
-URxvt*font: xft:inconsolata:pixelsize=12:antialias=true:hinting=true
+# Not really in love with terminus but can't get inconsolata loading as non-xft
+URxvt.font: -*-terminus-medium-*-*-*-14-*-*-*-*-*-*-*
+URxvt.boldfont: -*-terminus-bold-*-*-*-14-*-*-*-*-*-*-*
+
 
 URxvt*foreground: #f2f2f2
 #URxvt*background: #101010
