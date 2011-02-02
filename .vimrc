@@ -337,4 +337,4 @@ autocmd FileType erlang setlocal sw=4 ts=4
 " This command annoys me
 map K <Nop>
 
-set colorcolumn 81
+set colorcolumn=81
