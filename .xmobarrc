@@ -2,7 +2,7 @@ Config {
   font         = "-*-terminus-*-*-*-*-12-*-*-*-*-*-*-u",
   bgColor     = "#000000",
   fgColor     = "#FFFFFF",
-  position =  Top,
+  position =  Top L 100,
   lowerOnStart = False,
   commands     = [
               Run Cpu ["<cpu0>/<cpu1>","-L","3","-H","50","-l","green","--normal","orange","--high","red"]   300,
