@@ -318,11 +318,6 @@ map <leader>a :Ack
 map <leader>ct :ConqueTermTab
 map <leader>cs :ConqueTermSplit
 
-" Highlight lines over 80 columns
-hi gitError ctermbg=130
-match gitError /^.*\s$/
-2match gitError /^.\{120\}.*$/
-
 " Shut the hell up NERD
 let g:NERDShutUp=1
 
@@ -341,3 +336,5 @@ autocmd FileType erlang setlocal sw=4 ts=4
 
 " This command annoys me
 map K <Nop>
+
+set colorcolumn 81
