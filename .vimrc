@@ -338,3 +338,4 @@ autocmd FileType erlang setlocal sw=4 ts=4
 map K <Nop>
 
 set colorcolumn=81
+nmap <leader>R :RainbowParenthesesToggle<cr>
