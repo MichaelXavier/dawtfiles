@@ -12,3 +12,5 @@ exclude *.swo
 exclude *.hi
 exclude deps
 exclude *.log
+exclude *.sql
+exclude *.sql.gz
