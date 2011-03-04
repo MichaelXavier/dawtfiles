@@ -171,9 +171,8 @@ set cursorline
 set cursorcolumn
 
 "folding settings
-"set foldmethod=indent   "fold based on indent
-"set foldmethod=manual
-set foldmethod=syntax
+" syntax folding is slow as hell on most of my systems
+set foldmethod=indent
 set foldnestmax=3       "deepest fold is 3 levels
 set nofoldenable        "dont fold by default
 
