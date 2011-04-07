@@ -63,12 +63,12 @@ export BROWSER=google-chrome
 # MOAR CORES!
 alias make='make -j 5'
 
-# Required by rvm
-if [[ -s /home/michael/.rvm/scripts/rvm ]] ; then source /home/michael/.rvm/scripts/rvm ; fi
-
 # This significantly increases ram usage of REE but cut my spec run time in half
 export RUBY_HEAP_MIN_SLOTS=1000000
 export RUBY_HEAP_SLOTS_INCREMENT=1000000
 export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
 export RUBY_HEAP_FREE_MIN=500000
 export RUBY_GC_MALLOC_LIMIT=1000000000
+
+# Required by rvm
+if [[ -s /home/michael/.rvm/scripts/rvm ]] ; then source /home/michael/.rvm/scripts/rvm ; fi
