@@ -1,0 +1,2 @@
+/*jslint white: false, devel: true, debug: true, browser: true, undef: true, newcap: true, maxerr: 50, indent: 2, onevar: true */
+/*global jQuery, $, _, Backbone, window */
