@@ -11,9 +11,10 @@ Config {
               Run Swap ["-t","Swp: <usedratio>", "-l","green","--normal","orange","--high","red"] 300,
               Run Battery ["-t","Bat: <left>", "-l","red","--normal","orange","--high","green"] 300,
               Run Date "%m-%d-%Y %I:%M%p" "date" 600,
+              Run Com "hostname" [] "" 0,
               Run StdinReader
             ],
   sepChar      = "%",
   alignSep     = "}{",
-  template = " }{ %disku% <fc=#0033FF>|</fc> %cpu% <fc=#0033FF>|</fc> %memory% <fc=#0033FF>|</fc> %swap% <fc=#0033FF>|</fc> %battery% <fc=#0033FF>|</fc> %date%"
+  template = "%hostname% }{ %disku% <fc=#0033FF>|</fc> %cpu% <fc=#0033FF>|</fc> %memory% <fc=#0033FF>|</fc> %swap% <fc=#0033FF>|</fc> %battery% <fc=#0033FF>|</fc> %date%"
 }
