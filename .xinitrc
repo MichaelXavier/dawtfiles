@@ -6,5 +6,6 @@ xmodmap -e "remove Lock = Caps_Lock"
 xmodmap -e "keysym Caps_Lock = Escape"
 xmodmap -e "add Control = Control_L"
 numlockx &
-autocutsel &
+autocutsel -fork &
+autocutsel -selection PRIMARY -fork &
 exec ck-launch-session startlxde
