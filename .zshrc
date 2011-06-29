@@ -63,5 +63,7 @@ export BROWSER=google-chrome
 # MOAR CORES!
 alias make='make -j 5'
 
+alias wgeto='wget -qO-'
+
 # Required by rvm
 if [[ -s /home/michael/.rvm/scripts/rvm ]] ; then source /home/michael/.rvm/scripts/rvm ; fi
