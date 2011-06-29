@@ -261,6 +261,8 @@ manageScratchPad = scratchpadManageHook (W.RationalRect 0.125 0.125 0.75 0.75)
 myManageHook = composeAll
     [ className =? "MPlayer"        --> doFloat
     , className =? "Gimp"           --> doFloat
+    , className =? "Firefox"        --> doShift "9"
+    , className =? "Namoroka"       --> doShift "9"
     , resource  =? "desktop_window" --> doIgnore
     , resource  =? "kdesktop"       --> doIgnore ] <+> manageScratchPad
 
