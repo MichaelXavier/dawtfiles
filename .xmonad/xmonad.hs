@@ -318,7 +318,7 @@ myStartupHook = return ()
 -- main = xmonad =<< dzen defaults
 --main = xmonad myConfig
 main = do
-    xmproc <- spawnPipe "/home/michael/.cabal/bin/xmobar /home/michael/.xmobarrc"
+    xmproc <- spawnPipe "/usr/bin/xmobar /home/michael/.xmobarrc"
     xmonad myConfig
 
 
