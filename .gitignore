@@ -3,3 +3,5 @@
 *.hs.*
 xmonad-*
 *.o
+*.swp
+*.swo
