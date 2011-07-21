@@ -59,6 +59,8 @@ export PATH=$PATH:/home/michael/.gem/ruby/1.8/bin:/home/michael/bin:/home/michae
 export EDITOR=vim
 export PAGER=less
 export BROWSER=google-chrome
+# Get hassled by remote hosts about urxvt not being a valid term
+export TERM=rxvt
 
 # MOAR CORES!
 alias make='make -j 5'
