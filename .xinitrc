@@ -7,4 +7,6 @@ xmodmap -e "add Control = Control_L"
 numlockx &
 autocutsel -fork &
 autocutsel -selection PRIMARY -fork &
+xset +fp /usr/share/fonts/local
+xset fp rehash
 exec ck-launch-session startlxde
