@@ -67,5 +67,8 @@ alias make='make -j 5'
 
 alias wgeto='wget -qO-'
 
+stty stop undef # remove ctrl+q
+stty start undef # remove ctrl+s
+
 # Required by rvm
 if [[ -s /home/michael/.rvm/scripts/rvm ]] ; then source /home/michael/.rvm/scripts/rvm ; fi
