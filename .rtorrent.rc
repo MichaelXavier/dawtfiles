@@ -110,4 +110,4 @@ check_hash = yes
 #schedule_remove = "ip_tick1"
 
 #ADDING SAFE SYNC, might cause more disk seeks, remove if needed
-safe_sync = yes
+#safe_sync = yes
