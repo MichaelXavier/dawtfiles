@@ -13,6 +13,16 @@ if File.exist?(rails) && ENV['SKIP_RAILS'].nil?
   if Rails.version[0..0] == "2"
     require 'console_app'
     require 'console_with_helpers'
+
+    if defined?(Hijacker)
+      Pry.config.prompt = proc do |target_self, nest_level, pry|
+        if nest_level == 0
+          "(#{Hijacker.current_client}) pry(#{Pry.view_clip(target_self)})> "
+        else
+          "(#{Hijacker.current_client}) pry(#{Pry.view_clip(target_self)}):#{nest_level}> "
+        end
+      end
+    end
   elsif Rails.version[0..0] == "3"
     require 'rails/console/app'
     require 'rails/console/helpers'
