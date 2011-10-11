@@ -16,10 +16,11 @@ if File.exist?(rails) && ENV['SKIP_RAILS'].nil?
 
     if defined?(Hijacker)
       Pry.config.prompt = proc do |target_self, nest_level, pry|
+        current_client = "\033[1m#{Hijacker.current_client}\033[0m"
         if nest_level == 0
-          "(#{Hijacker.current_client}) pry(#{Pry.view_clip(target_self)})> "
+          "(#{current_client}) pry(#{Pry.view_clip(target_self)})> "
         else
-          "(#{Hijacker.current_client}) pry(#{Pry.view_clip(target_self)}):#{nest_level}> "
+          "(#{current_client}) pry(#{Pry.view_clip(target_self)}):#{nest_level}> "
         end
       end
     end
