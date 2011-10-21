@@ -4,4 +4,13 @@ set convert-meta on
 
 # ^l clear screen
 bind -m vi-insert "\C-l":clear-screen
-bind -m vi-insert "\C-r":reverse-search-history
+
+set show-all-if-ambiguous on
+
+set editing-mode vi
+
+set keymap vi-command
+"\022":history-incremental-search-backward
+
+set keymap vi-insert
+"\022":history-incremental-search-backward

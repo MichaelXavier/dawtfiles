@@ -70,5 +70,7 @@ alias wgeto='wget -qO-'
 stty stop undef # remove ctrl+q
 stty start undef # remove ctrl+s
 
+bindkey "^R" history-incremental-search-backward
+
 # Required by rvm
 if [[ -s /home/michael/.rvm/scripts/rvm ]] ; then source /home/michael/.rvm/scripts/rvm ; fi
