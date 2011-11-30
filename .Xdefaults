@@ -10,8 +10,8 @@ URxvt.urlLauncher: /usr/bin/google-chrome
 URxvt.matcher.button: 1
 
 #URxvt*font: xft:inconsolata:pixelsize=12:antialias=true:hinting=true
-URxvt.font: -*-terminus-medium-*-*-*-12-*-*-*-*-*-*-*
-URxvt.boldfont: -*-terminus-bold-*-*-*-12-*-*-*-*-*-*-*
+URxvt.font: -*-terminus-medium-*-*-*-14-*-*-*-*-*-*-*
+URxvt.boldfont: -*-terminus-bold-*-*-*-14-*-*-*-*-*-*-*
 
 URxvt*foreground: #f2f2f2
 #URxvt*background: #101010
