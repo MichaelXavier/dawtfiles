@@ -72,9 +72,6 @@ stty start undef # remove ctrl+s
 
 bindkey "^R" history-incremental-search-backward
 
-# Required by rvm
-if [[ -s /home/michael/.rvm/scripts/rvm ]] ; then source /home/michael/.rvm/scripts/rvm ; fi
-
 # unregister broken GHC packages. Run this a few times to resolve dependency rot in installed packages.
 # ghc-pkg-clean -f cabal/dev/packages*.conf also works.
 function ghc-pkg-clean() {
@@ -97,3 +94,7 @@ function ghc-pkg-reset() {
 }
 
 alias cabalupgrades="cabal list --installed  | egrep -iv '(synopsis|homepage|license)'"
+
+
+##### RVM #####
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
