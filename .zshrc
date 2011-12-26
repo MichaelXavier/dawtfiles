@@ -30,7 +30,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
-##### Haskell Customizations #####
+bindkey "^R" history-incremental-search-backward
 
 # unregister broken GHC packages. Run this a few times to resolve dependency rot in installed packages.
 # ghc-pkg-clean -f cabal/dev/packages*.conf also works.
@@ -88,3 +88,6 @@ export RUBY_GC_MALLOC_LIMIT=1000000000
 
 ##### Options #####
 unsetopt beep
+
+##### RVM #####
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
