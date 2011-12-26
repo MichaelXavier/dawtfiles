@@ -81,3 +81,6 @@ export BROWSER=google-chrome
 
 ##### Options #####
 unsetopt beep
+
+##### RVM #####
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
