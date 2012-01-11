@@ -88,6 +88,7 @@ export RUBY_GC_MALLOC_LIMIT=1000000000
 
 ##### Options #####
 unsetopt beep
+unsetopt correct_all
 
 ##### RVM #####
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
