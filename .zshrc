@@ -29,6 +29,7 @@ plugins=(git bundler gem vi-mode)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+bindkey "^R" history-incremental-search-backward
 
 ##### Haskell Customizations #####
 
