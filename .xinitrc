@@ -6,8 +6,6 @@ xmodmap -e "keysym Caps_Lock = Escape"
 xmodmap -e "add Control = Control_L"
 numlockx &
 xset r rate 175 35
-autocutsel -fork &
-autocutsel -selection PRIMARY -fork &
 xset +fp /usr/share/fonts/local
 xset fp rehash
 exec ck-launch-session startlxde
