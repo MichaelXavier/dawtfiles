@@ -60,6 +60,7 @@ alias cabalupgrades="cabal list --installed  | egrep -iv '(synopsis|homepage|lic
 alias make='make -j 5'
 alias wgeto='wget -qO-'
 alias mixer='alsamixer'
+alias diskusage='gdmap'
 
 ##### Bindings #####
 stty stop undef # remove ctrl+q
