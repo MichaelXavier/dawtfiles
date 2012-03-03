@@ -1,0 +1,5 @@
+tmux start-server
+tmux new-session -s system -n mixer -d alsamixer
+tmux new-window -t system -n htop htop
+tmux new-window -t system -n rtorrent rtorrent
+tmux attach-session -t system
