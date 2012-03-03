@@ -4,18 +4,23 @@ session="appservers"
 
 tmux start-server
 
-tmux new-session -s $session -d 
+tmux has-session -t $session
 
-tmux send-keys -t $session:1.1  "ssh app1" C-m
+if [ $? != 0]
+then
+  tmux new-session -s $session -d 
 
-tmux split-window -h -t $session:1.1
-tmux send-keys -t $session:1.2  "ssh app2" C-m
+  tmux send-keys -t $session:1.1  "ssh app1" C-m
 
-tmux split-window -v -t $session:1.1
-tmux send-keys -t $session:1.3  "ssh app3" C-m
+  tmux split-window -h -t $session:1.1
+  tmux send-keys -t $session:1.2  "ssh app2" C-m
 
-tmux split-window -v -t $session:1.2
-tmux send-keys -t $session:1.4  "ssh worker3" C-m
+  tmux split-window -v -t $session:1.1
+  tmux send-keys -t $session:1.3  "ssh app3" C-m
+
+  tmux split-window -v -t $session:1.2
+  tmux send-keys -t $session:1.4  "ssh worker3" C-m
+fi
 
 tmux select-pane -t $session:1.1
 tmux attach-session -t $session

@@ -4,22 +4,28 @@ port=${2-3000}
 
 tmux start-server
 
-tmux new-session -s $appname -n $appname-server -d 
+tmux has-session -t $appname
 
-# app window
-tmux send-keys -t $appname:1  "cd ~/src/$appname" C-m
-tmux send-keys -t $appname:1  "./script/server -p $port" C-m
+if [ $? != 0]
+then
+  tmux new-session -s $appname -n $appname-server -d 
 
-# console and log window
-tmux new-window -a -t $appname -n $appname-console
-tmux send-keys -t $appname:2  "cd ~/src/$appname" C-m
-tmux send-keys -t $appname:2  "pry" C-m
-tmux split-window -v -t $appname:2 -p 20
-tmux send-keys -t $appname:2.2  "cd ~/src/$appname" C-m
-tmux send-keys -t $appname:2.2  "tail -fn0 log/development.log" C-m
+  # app window
+  tmux send-keys -t $appname:1  "cd ~/src/$appname" C-m
+  tmux send-keys -t $appname:1  "./script/server -p $port" C-m
 
-# tests window
-tmux new-window -a -t $appname:2 -n $appname-tests
-tmux send-keys -t $appname:3  "cd ~/src/$appname" C-m
+  # console and log window
+  tmux new-window -a -t $appname -n $appname-console
+  tmux send-keys -t $appname:2  "cd ~/src/$appname" C-m
+  tmux send-keys -t $appname:2  "pry" C-m
+  tmux split-window -v -t $appname:2 -p 20
+  tmux send-keys -t $appname:2.2  "cd ~/src/$appname" C-m
+  tmux send-keys -t $appname:2.2  "tail -fn0 log/development.log" C-m
+
+  # tests window
+  tmux new-window -a -t $appname:2 -n $appname-tests
+  tmux send-keys -t $appname:3  "cd ~/src/$appname" C-m
+fi
+
 tmux select-window -t $appname:1
 tmux attach-session -t $appname
