@@ -12,7 +12,8 @@ URxvt.matcher.button: 1
 #URxvt*font: xft:inconsolata:pixelsize=12:antialias=true:hinting=true
 #URxvt.font: -*-terminus-medium-*-*-*-14-*-*-*-*-*-*-*
 #URxvt.boldfont: -*-terminus-bold-*-*-*-14-*-*-*-*-*-*-*
-URxvt*font: xft:m+ 1mn medium:pixelsize=13:antialias=true:hinting=true
+#URxvt*font: xft:m+ 1mn medium:pixelsize=13:antialias=true:hinting=true
+URxvt*font: xft:m+ 1mn regular:pixelsize=13:antialias=true:hinting=true
 URxvt*boldfont: xft:m+ 1mn bold:pixelsize=13:antialias=true:hinting=true
 
 URxvt*foreground: #f2f2f2
