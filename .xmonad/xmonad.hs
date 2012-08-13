@@ -16,6 +16,7 @@
 --
 
 import XMonad
+import XMonad.Actions.NoBorders
 import XMonad.Hooks.DynamicLog
 import XMonad.Hooks.ManageDocks
 import XMonad.Util.Run(spawnPipe)
@@ -160,6 +161,8 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((modm .|. controlMask, xK_w), spawn "xcalib -invert -alter -s 0")
     , ((modm .|. controlMask, xK_e), spawn "xcalib -invert -alter -s 1")
     , ((modm              , xK_s    ), scratchpadSpawnActionTerminal "urxvt -pe tabbed")
+    -- toggle window border with meta g
+    , ((modm              , xK_g    ), withFocused toggleBorder)
 
     ]
     ++
