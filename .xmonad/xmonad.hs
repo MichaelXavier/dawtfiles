@@ -264,6 +264,7 @@ myManageHook = composeAll
     , className =? "Firefox"        --> doShift "9"
     , className =? "Namoroka"       --> doShift "9"
     , className =? "Pidgin"         --> doShift "9"
+    , className =? "pavucontrol"    --> doShift "9"
     , resource  =? "desktop_window" --> doIgnore
     , resource  =? "kdesktop"       --> doIgnore ] <+> manageScratchPad
 
