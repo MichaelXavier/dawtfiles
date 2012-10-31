@@ -11,4 +11,6 @@ xmodmap -e "keysym Caps_Lock = Control_L"
 xmodmap -e "add Control = Control_L"
 numlockx &
 xset r rate 175 35
+xflux -z 98021
+/usr/bin/xscreensaver -no-splash &
 exec ck-launch-session startlxde
