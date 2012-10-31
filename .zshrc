@@ -83,6 +83,8 @@ export BROWSER=google-chrome
 unsetopt beep
 unsetopt correct_all
 
+source $HOME/.crystalrc
+
 ##### RVM #####
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
