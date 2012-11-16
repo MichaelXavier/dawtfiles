@@ -19,6 +19,7 @@ import XMonad
 import XMonad.Actions.NoBorders
 import XMonad.Hooks.DynamicLog
 import XMonad.Hooks.ManageDocks
+import XMonad.Hooks.UrgencyHook
 import XMonad.Util.Run(spawnPipe)
 import XMonad.Util.Scratchpad
 import Data.Monoid
@@ -317,11 +318,17 @@ myStartupHook = return ()
 
 -- Run xmonad with the settings you specify. No need to modify this.
 --
--- main = xmonad =<< dzen defaults
---main = xmonad myConfig
-main = do
-    xmproc <- spawnPipe "/usr/bin/xmobar /home/michael/.xmobarrc"
-    xmonad myConfig
+--main = do
+--    xmproc <- spawnPipe "/usr/bin/xmobar /home/michael/.xmobarrc"
+--    xmonad myConfig
+main :: IO ()
+main = xmonad =<< statusBar cmd pp kb conf
+  where 
+    uhook = withUrgencyHookC NoUrgencyHook urgentConfig
+    cmd = "bash -c \"tee >(xmobar -x0) | xmobar -x1\""
+    pp = customPP
+    kb = toggleStrutsKey
+    conf = uhook myConfig
 
 
 --main = xmonad =<< statusBar barCmd barPP toggleStrutsKey myConfig
@@ -360,3 +367,18 @@ myConfig = defaultConfig {
         logHook            = myLogHook,
         startupHook        = myStartupHook
     }
+
+
+customPP = defaultPP { ppCurrent = xmobarColor "#429942" "" . wrap "<" ">"
+                     , ppHidden = xmobarColor "#C98F0A" ""
+                     , ppHiddenNoWindows = xmobarColor "#C9A34E" ""
+                     , ppUrgent = xmobarColor "#FFFFAF" "" . wrap "[" "]" 
+                     , ppLayout = xmobarColor "#C9A34E" ""
+                     , ppTitle =  xmobarColor "#C9A34E" "" . shorten 80
+                     , ppSep = xmobarColor "#0033FF" "" " | "
+                     }
+
+urgentConfig = UrgencyConfig { suppressWhen = Focused, remindWhen = Dont }
+
+toggleStrutsKey :: XConfig Layout -> (KeyMask, KeySym)
+toggleStrutsKey XConfig {XMonad.modMask = modMask} = (modMask, xK_b)
