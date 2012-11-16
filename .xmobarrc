@@ -3,7 +3,7 @@ Config {
   bgColor     = "#000000",
   fgColor     = "#FFFFFF",
   position =  Top,
-  lowerOnStart = False,
+  lowerOnStart = True,
   commands     = [
               Run Cpu ["<cpu0>/<cpu1>","-L","3","-H","50","-l","green","--normal","orange","--high","red"]   300,
               Run DiskU [("/", "/: <free>/<size>"), ("/home", "/home: <free>/<size>")] ["disku"] 6000,
@@ -12,9 +12,10 @@ Config {
               Run Battery ["-t","Bat: <left>", "-l","red","--normal","orange","--high","green"] 300,
               Run Date "%m-%d-%Y %I:%M%p" "date" 600,
               Run Com "hostname" [] "" 0,
+              Run CoreTemp ["-t", "Temp: <core0>C : <core1>C : <core2>C : <core3>C"] 10,
               Run StdinReader
             ],
   sepChar      = "%",
   alignSep     = "}{",
-  template = "%hostname% }{ %disku% <fc=#0033FF>|</fc> %cpu% <fc=#0033FF>|</fc> %memory% <fc=#0033FF>|</fc> %swap% <fc=#0033FF>|</fc> %battery% <fc=#0033FF>|</fc> %date%"
+  template = "%hostname% <fc=#0033FF>|</fc> %StdinReader% }{ %disku% <fc=#0033FF>|</fc> %coretemp% <fc=#0033FF>|</fc> %cpu% <fc=#0033FF>|</fc> %memory% <fc=#0033FF>|</fc> %swap% <fc=#0033FF>|</fc> %battery% <fc=#0033FF>|</fc> %date%"
 }
