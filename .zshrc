@@ -81,6 +81,7 @@ export PATH=$PATH:/home/michael/.gem/ruby/1.8/bin:/home/michael/bin:/home/michae
 export EDITOR=vim
 export PAGER=less
 export BROWSER=google-chrome
+export GOPATH=~/go
 
 ##### Options #####
 unsetopt beep
