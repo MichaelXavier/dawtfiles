@@ -74,6 +74,7 @@ export AUTOFEATURE=true
 export AUTOTEST=true
 export RSPEC=true
 export RUBYOPT=rubygems
+export JRUBY_OPTS=--1.9
 export GEM_PRIVATE_KEY='/home/michael/Scripts/Ruby/Gem\ Building\ Documents/gem-private_key.pem'
 export GEM_CERTIFICATE_CHAIN='/home/michael/Scripts/Ruby/Gem\ Building\ Documents/gem-public_cert.pem'
 export PATH=$PATH:/home/michael/.gem/ruby/1.8/bin:/home/michael/bin:/home/michael/.cabal/bin:/usr/local/bin:/opt/java/jre/bin
