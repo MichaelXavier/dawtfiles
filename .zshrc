@@ -24,7 +24,7 @@ ZSH_THEME="gallois"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git bundler gem vi-mode)
+plugins=(git gem vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -57,7 +57,6 @@ function ghc-pkg-reset() {
 alias cabalupgrades="cabal list --installed  | egrep -iv '(synopsis|homepage|license)'"
 
 ##### Aliases ##### 
-alias make='make -j 5'
 alias wgeto='wget -qO-'
 alias mixer='alsamixer'
 alias diskusage='gdmap'
@@ -78,7 +77,7 @@ export JRUBY_OPTS=--1.9
 export GEM_PRIVATE_KEY='/home/michael/Scripts/Ruby/Gem\ Building\ Documents/gem-private_key.pem'
 export GEM_CERTIFICATE_CHAIN='/home/michael/Scripts/Ruby/Gem\ Building\ Documents/gem-public_cert.pem'
 export PATH=$PATH:/home/michael/.gem/ruby/1.8/bin:/home/michael/bin:/home/michael/.cabal/bin:/usr/local/bin:/opt/java/jre/bin
-export EDITOR=vim
+export EDITOR=gvim
 export PAGER=less
 export BROWSER=google-chrome
 export GOPATH=~/go
