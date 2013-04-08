@@ -5,3 +5,6 @@ xmonad-*
 *.o
 *.swp
 *.swo
+cabal-dev/
+.hsenv_*/
+dist/*
