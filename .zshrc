@@ -64,6 +64,8 @@ alias wgeto='wget -qO-'
 alias mixer='alsamixer'
 alias diskusage='gdmap'
 
+alias hoogle="hoogle --color"
+
 ##### Bindings #####
 stty stop undef # remove ctrl+q
 stty start undef # remove ctrl+s
