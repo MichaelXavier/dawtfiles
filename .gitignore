@@ -8,3 +8,4 @@ xmonad-*
 cabal-dev/
 .hsenv_*/
 dist/*
+.hsenv
