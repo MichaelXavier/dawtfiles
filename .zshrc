@@ -27,7 +27,7 @@ ZSH_THEME="eastwoodkolo" # like it, but should steal kolo's colors
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git bundler gem vi-mode archlinux rails rails3)
+plugins=(bundler gem vi-mode archlinux rails rails3)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -108,3 +108,12 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 source ~/.crystalrc
 
 alias a="ls -lrthG"
+
+function g {
+  if [[ $# > 0 ]]; then
+    git $@
+  else
+    git status
+  fi
+}
+compdef g=git
