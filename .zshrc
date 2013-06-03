@@ -105,3 +105,6 @@ source $HOME/.crystalrc
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
+source ~/.crystalrc
+
+alias a="ls -lrthG"
