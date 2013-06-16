@@ -10,4 +10,5 @@ xset r rate 175 35
 xset +fp /usr/share/fonts/local
 xset fp rehash
 xflux -z 98021
+conky
 exec ck-launch-session startlxde

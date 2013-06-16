@@ -322,13 +322,15 @@ myStartupHook = return ()
 --    xmproc <- spawnPipe "/usr/bin/xmobar /home/michael/.xmobarrc"
 --    xmonad myConfig
 main :: IO ()
-main = xmonad =<< statusBar cmd pp kb conf
-  where 
-    uhook = withUrgencyHookC NoUrgencyHook urgentConfig
-    cmd = "bash -c \"tee >(xmobar -x0) | xmobar -x1\""
-    pp = customPP
-    kb = toggleStrutsKey
-    conf = uhook myConfig
+main = xmonad myConfig
+--main = xmonad =<< xmobar myConfig
+--main = xmonad =<< statusBar cmd pp kb conf
+--  where
+--    uhook = withUrgencyHookC NoUrgencyHook urgentConfig
+--    cmd = "bash -c \"tee >(xmobar -x0) | xmobar -x1\""
+--    pp = customPP
+--    kb = toggleStrutsKey
+--    conf = uhook myConfig
 
 
 --main = xmonad =<< statusBar barCmd barPP toggleStrutsKey myConfig
