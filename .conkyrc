@@ -1,4 +1,5 @@
-background yes
+background no
+#background yes
 use_xft yes
 xftfont cure:size=7
 xftalpha 1
@@ -32,7 +33,11 @@ TEXT
  
 ${font cure:size=12}${time %A, %d %B %Y}
 ${font cure:size=14}${time %H:%M%p}
+${font cure:size=7}BATTERY
+${battery_percent}% ${battery_bar}
+
 ${font cure:size=7}PROCESSORS
+TEMP: ${hwmon 2 temp 1}C
 CPU1: ${cpu cpu1}% ${cpubar cpu1}
 CPU2: ${cpu cpu2}% ${cpubar cpu2}
 CPU3: ${cpu cpu3}% ${cpubar cpu3}
