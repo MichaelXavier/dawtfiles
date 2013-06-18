@@ -1,5 +1,4 @@
-background no
-#background yes
+background yes
 use_xft yes
 xftfont cure:size=7
 xftalpha 1
