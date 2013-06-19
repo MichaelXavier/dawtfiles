@@ -30,7 +30,7 @@ override_utf8_locale no
  
 TEXT
  
-${font cure:size=12}${time %A, %d %B %Y}
+${font cure:size=12}${time %d %B %Y}
 ${font cure:size=14}${time %I:%M%p}
 ${font cure:size=7}BATTERY
 ${battery_percent}% ${battery_bar}
