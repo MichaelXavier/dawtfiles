@@ -47,13 +47,14 @@ function ghc-pkg-clean() {
 # remove all installed GHC/cabal packages, leaving ~/.cabal binaries and docs in place.
 # When all else fails, use this to get out of dependency hell and start over.
 function ghc-pkg-reset() {
-    read -p 'erasing all your user ghc and cabal packages - are you sure (y/n) ? ' ans
-    test x$ans == xy && ( \
-        echo 'erasing directories under ~/.ghc'; rm -rf `find ~/.ghc -maxdepth 1 -type d`; \
-        echo 'erasing ~/.cabal/lib'; rm -rf ~/.cabal/lib; \
-        # echo 'erasing ~/.cabal/packages'; rm -rf ~/.cabal/packages; \
-        # echo 'erasing ~/.cabal/share'; rm -rf ~/.cabal/share; \
-        )
+    read "ans?erasing all your user ghc and cabal packages - are you sure (y/n) ? "
+    if [[ "$ans" =~ ^[Yy]$ ]]
+    then
+      echo 'erasing directories under ~/.ghc'
+      rm -rf `find ~/.ghc -maxdepth 1 -type d`;
+      echo 'erasing ~/.cabal/lib'
+      rm -rf ~/.cabal/lib;
+    fi
 }
 
 alias cabalupgrades="cabal list --installed  | egrep -iv '(synopsis|homepage|license)'"
