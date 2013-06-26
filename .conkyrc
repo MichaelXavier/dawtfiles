@@ -17,9 +17,9 @@ draw_outline no
 draw_borders no
 draw_graph_borders yes
 #stippled_borders yes
-default_color 000000
+default_color FFFFFF
 default_shade_color 010101
-default_outline_color 333333
+default_outline_color FFFFFF
 alignment top_right
 #gap_x 18
 gap_y 0
