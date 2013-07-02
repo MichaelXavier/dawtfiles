@@ -25,6 +25,7 @@ import XMonad.Util.Scratchpad
 import Data.Monoid
 import System.Exit
 
+import Data.Bits
 import qualified XMonad.StackSet as W
 import qualified Data.Map        as M
 
@@ -86,6 +87,14 @@ myWorkspaces    = ["1","2","3","4","5","6","7","8","9"]
 --
 myNormalBorderColor  = "#dddddd"
 myFocusedBorderColor = "#ff0000"
+
+-- , keys = dupMask mod2Mask myKeys
+dupMask :: KeyMask -> (XConfig l -> M.Map (KeyMask,KeySym) (X ())) -> XConfig l -> M.Map (KeyMask,KeySym) (X ())
+dupMask sndm keys conf@(XConfig {modMask = modm}) = M.foldWithKey dupMask' M.empty (keys conf)
+  where
+    dupMask' b@(k,v) a as 
+      | k .&. modm /= 0 && k .&. sndm == 0 = M.insert b a $ M.insert ((k .&. (complement modm)) .|. sndm,v) a as
+      | otherwise                          = M.insert b a as
 
 ------------------------------------------------------------------------
 -- Key bindings. Add, modify or remove key bindings here.
@@ -357,7 +366,7 @@ myConfig = defaultConfig {
         focusedBorderColor = myFocusedBorderColor,
 
       -- key bindings
-        keys               = myKeys,
+        keys               = dupMask mod1Mask myKeys,
         mouseBindings      = myMouseBindings,
 
 
