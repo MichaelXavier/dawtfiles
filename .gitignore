@@ -9,3 +9,5 @@ cabal-dev/
 .hsenv_*/
 dist/*
 .hsenv
+.cabal-sandbox
+cabal.sandbox.conf
