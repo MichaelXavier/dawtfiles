@@ -1,0 +1,2 @@
+:def! search return . (":! hoogle " ++)
+:def! doc return . (":! hoogle --info " ++)
