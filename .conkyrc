@@ -49,5 +49,5 @@ $membar
 ${font cure:size=7}DISK
 Root $alignc ${fs_used /} / ${fs_size /} $alignr ${fs_used_perc /}%
 ${fs_bar 6 /}
-Root $alignc ${fs_used /home} /home ${fs_size /home} $alignr ${fs_used_perc /home}%
+Home $alignc ${fs_used /home} /home ${fs_size /home} $alignr ${fs_used_perc /home}%
 ${fs_bar 6 /home}
