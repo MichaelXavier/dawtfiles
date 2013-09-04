@@ -12,5 +12,6 @@ xmodmap -e "add Control = Control_L"
 numlockx &
 xset r rate 175 35
 xflux -z 98021
+~/.screenlayout/layout.sh
 /usr/bin/xscreensaver -no-splash &
-exec ck-launch-session startlxde
+exec startlxde
