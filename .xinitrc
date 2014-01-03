@@ -13,5 +13,4 @@ numlockx &
 xset r rate 175 35
 xflux -z 98021
 ~/.screenlayout/layout.sh
-/usr/bin/xscreensaver -no-splash &
 exec startlxde
