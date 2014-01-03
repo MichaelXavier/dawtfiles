@@ -79,12 +79,11 @@ export AUTOTEST=true
 export RSPEC=true
 export RUBYOPT=rubygems
 export JRUBY_OPTS=--1.9
-export GEM_PRIVATE_KEY='/home/michael/Scripts/Ruby/Gem\ Building\ Documents/gem-private_key.pem'
-export GEM_CERTIFICATE_CHAIN='/home/michael/Scripts/Ruby/Gem\ Building\ Documents/gem-public_cert.pem'
 export PATH=$PATH:/home/michael/.gem/ruby/1.8/bin:/home/michael/bin:/home/michael/.cabal/bin:/usr/local/bin:/opt/java/jre/bin
 export EDITOR="gvim -f"
 export PAGER=less
-export BROWSER=google-chrome
+export BROWSER=google-chrome-unstable
+export CHROME_BIN=/usr/bin/$BROWSER
 export GOPATH=~/go
 
 ##### Options #####
@@ -99,7 +98,7 @@ source $HOME/.crystalrc
 ##### Tmuxinator #####
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 source ~/.crystalrc
 
