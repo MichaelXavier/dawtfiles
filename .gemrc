@@ -5,6 +5,5 @@
 :backtrace: false
 :sources: 
 - http://gems.rubyforge.org/
-- http://gems.github.com/
 :bulk_threshold: 1000
 gem: --no-ri
