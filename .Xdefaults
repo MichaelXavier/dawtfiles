@@ -13,7 +13,6 @@ URxvt.matcher.button: 1
 URxvt.font: -*-terminus-medium-*-*-*-14-*-*-*-*-*-*-*
 URxvt.boldfont: -*-terminus-bold-*-*-*-14-*-*-*-*-*-*-*
 
-
 URxvt*foreground: #f2f2f2
 #URxvt*background: #101010
 URxvt*background: #000000
@@ -85,3 +84,73 @@ URxvt*color13:     #ec93d3
 ! ! bright-cyan + bright-white
 URxvt*color14:     #93e0e3
 URxvt*color15:     #ffffff
+<<<<<<< HEAD
+=======
+
+
+# tomorrow night
+URxvt*foreground:   #c5c8c6
+URxvt*background:   #1d1f21
+URxvt*cursorColor:  #aeafad
+URxvt*color0:       #000000
+URxvt*color1:       #912226
+URxvt*color2:       #778900
+URxvt*color3:       #ae7b00
+URxvt*color4:       #1d2594
+URxvt*color5:       #682a9b
+URxvt*color6:       #2b6651
+URxvt*color7:       #929593
+URxvt*color8:       #666666
+URxvt*color9:       #cc6666
+URxvt*color10:      #b5bd68
+URxvt*color11:      #f0c674
+URxvt*color12:      #81a2be
+URxvt*color13:      #b294bb
+URxvt*color14:      #8abeb7
+URxvt*color15:      #ecebec
+
+!---- Default URxvt (Solarized Dark, 12px)
+URxvt*fading:                         30
+URxvt*background:                     #002b36
+URxvt*foreground:                     #657b83
+URxvt*fadeColor:                      #002b36
+URxvt*cursorColor:                    #93a1a1
+URxvt*pointerColorBackground:         #586e75
+URxvt*pointerColorForeground:         #93a1a1
+URxvt*colorUL:                        #859900
+URxvt*colorBD:                        #268bd2
+URxvt*color0:                         #073642
+URxvt*color8:                         #002b36
+URxvt*color1:                         #dc322f
+URxvt*color9:                         #cb4b16
+URxvt*color2:                         #859900
+URxvt*color10:                        #586e75
+URxvt*color3:                         #b58900
+URxvt*color11:                        #657b83
+URxvt*color4:                         #268bd2
+URxvt*color12:                        #839496
+URxvt*color5:                         #d33682
+URxvt*color13:                        #6c71c4
+URxvt*color6:                         #2aa198
+URxvt*color14:                        #93a1a1
+URxvt*color7:                         #eee8d5
+URxvt*color15:                        #fdf6e3
+
+!---- Light URxvt (Solarized Light, 11pt)
+!URxvt*font:                   xft:Anonymous Pro-15
+URxvt*fading:                 0
+URxvt*background:             #fdf6e3
+URxvt*foreground:             #839496
+URxvt*fadeColor:              #fdf6e3
+URxvt*cursorColor:            #586e75
+URxvt*pointerColorBackground: #93a1a1
+URxvt*pointerColorForeground: #586e75
+URxvt*color0:                 #073642
+URxvt*color8:                 #fdf6e3
+URxvt*color10:                #93a1a1
+URxvt*color11:                #839496
+URxvt*color12:                #657b83
+URxvt*color14:                #586e75
+URxvt*color7:                 #839496
+URxvt*color15:                #002b36
+>>>>>>> afca2d1... use solarized for now
