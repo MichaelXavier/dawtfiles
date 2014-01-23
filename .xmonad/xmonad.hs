@@ -32,7 +32,7 @@ import qualified Data.Map        as M
 -- The preferred terminal program, which is used in a binding below and by
 -- certain contrib modules.
 --
-myTerminal      = "urxvt"
+myTerminal      = "gnome-terminal"
 
 -- Whether focus follows the mouse pointer.
 myFocusFollowsMouse :: Bool
@@ -170,7 +170,8 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((mod4Mask .|. shiftMask, xK_z), spawn "xscreensaver-command -lock")
     , ((modm .|. controlMask, xK_w), spawn "xcalib -invert -alter -s 0")
     , ((modm .|. controlMask, xK_e), spawn "xcalib -invert -alter -s 1")
-    , ((modm              , xK_s    ), scratchpadSpawnActionTerminal "urxvt -pe tabbed")
+    , ((modm              , xK_s    ), scratchpadSpawnActionCustom "guake -t")
+
     -- toggle window border with meta g
     , ((modm              , xK_g    ), withFocused toggleBorder)
 
@@ -277,6 +278,7 @@ myManageHook = composeAll
     , className =? "Pidgin"         --> doShift "9"
     , className =? "pavucontrol"    --> doShift "9"
     , resource  =? "desktop_window" --> doIgnore
+    , className =? "Guake"          --> doFloat
     , resource  =? "kdesktop"       --> doIgnore ] <+> manageScratchPad
 
 ------------------------------------------------------------------------
