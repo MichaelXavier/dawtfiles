@@ -85,7 +85,8 @@ export BROWSER=google-chrome-beta
 export CHROME_BIN=/usr/bin/google-chrome-beta
 
 # This significantly increases ram usage of REE but cut my spec run time in half
-export RUBY_HEAP_MIN_SLOTS=1000000
+#export RUBY_HEAP_MIN_SLOTS=1000000
+export RUBY_GC_HEAP_INIT_SLOTS=1000000
 export RUBY_HEAP_SLOTS_INCREMENT=1000000
 export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
 export RUBY_HEAP_FREE_MIN=500000
