@@ -31,7 +31,7 @@ import qualified Data.Map        as M
 -- The preferred terminal program, which is used in a binding below and by
 -- certain contrib modules.
 --
-myTerminal      = "urxvt"
+myTerminal      = "gnome-terminal"
 
 -- Whether focus follows the mouse pointer.
 myFocusFollowsMouse :: Bool
@@ -270,6 +270,7 @@ myManageHook = composeAll
     , className =? "Gimp"           --> doFloat
     , className =? "Firefox"        --> doShift "9"
     , className =? "Namoroka"       --> doShift "9"
+    , className =? "Guake"          --> doFloat
     , resource  =? "desktop_window" --> doIgnore
     , resource  =? "kdesktop"       --> doIgnore ] <+> manageScratchPad
 
