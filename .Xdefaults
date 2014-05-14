@@ -84,9 +84,6 @@ URxvt*color13:     #ec93d3
 ! ! bright-cyan + bright-white
 URxvt*color14:     #93e0e3
 URxvt*color15:     #ffffff
-<<<<<<< HEAD
-=======
-
 
 # tomorrow night
 URxvt*foreground:   #c5c8c6
@@ -153,4 +150,5 @@ URxvt*color12:                #657b83
 URxvt*color14:                #586e75
 URxvt*color7:                 #839496
 URxvt*color15:                #002b36
->>>>>>> afca2d1... use solarized for now
+
+URxvt*loginShell: true
