@@ -83,6 +83,7 @@ export EDITOR="emacs -nw"
 export PAGER=less
 export BROWSER=google-chrome-beta
 export CHROME_BIN=/usr/bin/google-chrome-beta
+export GOPATH=$HOME/go
 
 # This significantly increases ram usage of REE but cut my spec run time in half
 #export RUBY_HEAP_MIN_SLOTS=1000000
