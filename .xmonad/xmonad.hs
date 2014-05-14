@@ -360,7 +360,7 @@ myConfig = defaultConfig {
         focusedBorderColor = myFocusedBorderColor,
 
       -- key bindings
-        keys               = dupMask mod1Mask myKeys,
+        keys               = myKeys,
         mouseBindings      = myMouseBindings,
 
 
