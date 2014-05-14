@@ -119,3 +119,5 @@ function g {
   fi
 }
 compdef g=git
+
+eval "$(direnv hook zsh)"
