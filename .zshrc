@@ -27,7 +27,7 @@ ZSH_THEME="eastwoodkolo" # like it, but should steal kolo's colors
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(bundler gem vi-mode archlinux rails)
+plugins=(gem archlinux rails)
 
 source $ZSH/oh-my-zsh.sh
 
