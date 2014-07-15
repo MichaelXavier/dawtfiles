@@ -7,8 +7,12 @@ ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 #ZSH_THEME="gallois" # like it
 #ZSH_THEME="kolo" # like it but incomplete path
-ZSH_THEME="eastwood" # like it, but should steal kolo's colors
-ZSH_THEME="eastwoodkolo" # like it, but should steal kolo's colors
+
+if [ -n "$INSIDE_EMACS" ]; then
+    export ZSH_THEME="robbyrussell"
+else
+    export ZSH_THEME="eastwoodkolo"
+fi
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
