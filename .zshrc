@@ -86,7 +86,7 @@ export JRUBY_OPTS=--1.9
 export PATH=$PATH:/home/michael/.gem/ruby/1.8/bin:/home/michael/bin:/home/michael/.cabal/bin:/usr/local/bin:/opt/java/jre/bin
 export EDITOR="gvim -f"
 export PAGER=less
-export BROWSER=google-chrome-unstable
+export BROWSER=google-chrome
 export CHROME_BIN=/usr/bin/$BROWSER
 export GOPATH=~/go
 
