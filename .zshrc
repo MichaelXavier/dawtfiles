@@ -124,3 +124,5 @@ alias bower='noglob bower'
 
 export NVM_DIR="/home/michael/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+eval "$(direnv hook zsh)"
