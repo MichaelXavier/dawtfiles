@@ -108,8 +108,6 @@ export PATH=$PATH:node_modules/.bin
 
 source ~/.crystalrc
 
-alias node="nodejs"
-
 alias a="ls -lrthG"
 
 function g {
