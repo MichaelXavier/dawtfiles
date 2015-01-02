@@ -11,7 +11,7 @@ ZSH=$HOME/.oh-my-zsh
 if [ -n "$INSIDE_EMACS" ]; then
     export ZSH_THEME="robbyrussell"
 else
-    export ZSH_THEME="eastwoodkolo"
+    export ZSH_THEME="kolo"
 fi
 
 # Set to this to use case-sensitive completion
