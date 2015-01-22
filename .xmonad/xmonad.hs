@@ -17,5 +17,5 @@ overrideKeys (XConfig { modMask = modm}) = M.fromList $
     -- numbers my screens backwards for some reason
     multiScreenMapping =
       [((m .|. modm, key), screenWorkspace sc >>= flip whenJust (windows . f))
-          | (key, sc) <- zip [xK_w, xK_e] [1, 0]
+          | (key, sc) <- zip [xK_w, xK_e] [0, 1]
           , (f, m) <- [(W.view, 0), (W.shift, shiftMask)]]
