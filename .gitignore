@@ -13,3 +13,5 @@ dist/*
 cabal.sandbox.config
 docsets/
 TAGS
+node_modules/
+bower_components/
