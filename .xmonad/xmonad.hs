@@ -11,7 +11,10 @@ main = xmonad gnomeConfig
        }
 
 overrideKeys (XConfig { modMask = modm}) = M.fromList $
-    [ ((modm, xK_p), spawn "dmenu_run") ] ++ multiScreenMapping
+    [ ((modm, xK_p), spawn "dmenu_run")
+    , ((modm .|. controlMask, xK_w), spawn "xcalib -invert -alter -s 0")
+    , ((modm .|. controlMask, xK_e), spawn "xcalib -invert -alter -s 1")
+    ] ++ multiScreenMapping
   where
     -- copied from defaultConfig, but reversed because xinerama
     -- numbers my screens backwards for some reason
