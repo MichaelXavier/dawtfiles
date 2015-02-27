@@ -84,11 +84,15 @@ export RSPEC=true
 export RUBYOPT=rubygems
 export JRUBY_OPTS=--1.9
 export PATH=$PATH:/home/michael/.gem/ruby/1.8/bin:/home/michael/bin:/home/michael/.cabal/bin:/usr/local/bin:/opt/java/jre/bin
-export EDITOR=emacsclient
 export PAGER=less
 export BROWSER=google-chrome
 export CHROME_BIN=/usr/bin/$BROWSER
 export GOPATH=~/go
+
+# http://stackoverflow.com/questions/5570451/how-to-start-emacs-server-only-if-it-is-not-started
+export ALTERNATE_EDITOR=""
+export EDITOR="emacsclient -t"
+
 
 ##### Options #####
 unsetopt beep
