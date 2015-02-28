@@ -113,8 +113,23 @@ export PATH=$PATH:node_modules/.bin
 
 alias a="ls -lrthG"
 
-alias cc="cabal configure --disable-library-profiling"
+# haskell development aliases
+alias cc='cabal configure'
+alias ci='cabal install'
+cb() { cabal build "$@" | grep -v "^Loading package" ;}
 
+alias cct='cabal configure --ghc-options="-fno-code" --builddir=disttc'
+alias cit='cabal install --ghc-options="-fno-code" --builddir=disttc'
+cbt() { cabal build --builddir=disttc "$@" | grep -v "^Loading package" ;}
+
+alias cc0='cabal configure -O0 --builddir=dist0'
+alias ci0='cabal install -O0 --builddir=dist0'
+cb0() { cabal build --builddir=dist0 "$@" | grep -v "^Loading package" ;}
+
+alias csa='cabal sandbox add-source'
+alias csh='cabal sandbox hc-pkg'
+
+# Git development
 function g {
   if [[ $# > 0 ]]; then
     git $@
