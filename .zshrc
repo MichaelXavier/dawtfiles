@@ -77,7 +77,7 @@ stty start undef # remove ctrl+s
 ##### Exports #####
 
 # I get hassled by remote hosts about urxvt not being a valid term
-export TERM=rxvt
+export TERM=xterm
 export AUTOFEATURE=true
 export AUTOTEST=true
 export RSPEC=true
