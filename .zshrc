@@ -105,7 +105,7 @@ source $HOME/.soostonerc
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
 ##### Tmuxinator #####
-[[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
+source $HOME/.bin/tmuxinator.zsh
 
 export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 export PATH=$PATH:~/.cabal/bin:/opt/cabal/1.20/bin:/opt/ghc/7.6.3/bin:/opt/happy/1.19.3/bin:/opt/alex/3.1.3/bin
