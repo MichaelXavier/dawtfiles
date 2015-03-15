@@ -108,8 +108,9 @@ source $HOME/.soostonerc
 source $HOME/.bin/tmuxinator.zsh
 
 export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-export PATH=$PATH:~/.cabal/bin:/opt/cabal/1.20/bin:/opt/ghc/7.6.3/bin:/opt/happy/1.19.3/bin:/opt/alex/3.1.3/bin
+export PATH=$PATH:~/.cabal/bin:/opt/cabal/1.20/bin:/opt/ghc/7.8.4/bin:/opt/happy/1.19.3/bin:/opt/alex/3.1.3/bin
 export PATH=$PATH:node_modules/.bin
+export PATH=$PATH:~/.cask/bin
 
 alias a="ls -lrthG"
 
