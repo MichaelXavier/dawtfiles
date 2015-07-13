@@ -16,3 +16,4 @@ TAGS
 node_modules/
 bower_components/
 dist0/
+.dir-locals.el
