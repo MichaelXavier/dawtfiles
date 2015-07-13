@@ -1,9 +1,10 @@
-import XMonad
-import XMonad.Config.Gnome
-import XMonad.Util.Dmenu
-import qualified XMonad.StackSet as W
+import           XMonad
+import           XMonad.Actions.NoBorders
+import           XMonad.Config.Gnome
+import qualified XMonad.StackSet          as W
+import           XMonad.Util.Dmenu
 
-import qualified Data.Map as M
+import qualified Data.Map                 as M
 
 main = xmonad gnomeConfig
        { modMask = mod4Mask
@@ -14,6 +15,7 @@ overrideKeys (XConfig { modMask = modm}) = M.fromList $
     [ ((modm, xK_p), spawn "dmenu_run")
     , ((modm .|. controlMask, xK_w), spawn "xcalib -invert -alter -s 0")
     , ((modm .|. controlMask, xK_e), spawn "xcalib -invert -alter -s 1")
+    , ((modm, xK_g), withFocused toggleBorder)
     ] ++ multiScreenMapping
   where
     -- copied from defaultConfig, but reversed because xinerama
