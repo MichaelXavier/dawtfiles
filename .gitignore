@@ -18,3 +18,4 @@ bower_components/
 dist0/
 .dir-locals.el
 .stack-work/
+per_machine_config.sh

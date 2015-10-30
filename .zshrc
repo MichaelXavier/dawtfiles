@@ -105,8 +105,6 @@ source $HOME/.soostonerc
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
 export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-export PATH=~/.cabal/bin:/opt/cabal/1.20/bin:/opt/ghc/7.8.4/bin:/opt/happy/1.19.3/bin:/opt/alex/3.1.3/bin:$PATH
-# export PATH=~/.cabal/bin:/opt/cabal/1.20/bin:/opt/ghc/7.6.3/bin:/opt/happy/1.19.3/bin:/opt/alex/3.1.3/bin:$PATH
 export PATH=$PATH:node_modules/.bin
 export PATH=$PATH:~/.cask/bin
 
@@ -151,3 +149,5 @@ export NVM_DIR="/home/michael/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 eval "$(direnv hook zsh)"
+
+[[ -f "$HOME/dotfiles/per_machine_config.sh" ]] && source $HOME/dotfiles/per_machine_config.sh
