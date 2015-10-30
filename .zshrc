@@ -126,6 +126,10 @@ cb0() { cabal build --builddir=dist0 "$@" | grep -v "^Loading package" ;}
 alias csa='cabal sandbox add-source'
 alias csh='cabal sandbox hc-pkg'
 
+alias sb='stack build'
+alias st='stack test'
+
+
 # Git development
 function g {
   if [[ $# > 0 ]]; then
