@@ -19,3 +19,5 @@ exclude .dropbox.cache
 exclude cabal-dev
 exclude .cabal-sandbox
 exclude tmp
+exclude .stack-work
+exclude .stack
