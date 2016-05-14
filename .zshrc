@@ -74,25 +74,6 @@ alias hoogle="hoogle --color"
 stty stop undef # remove ctrl+q
 stty start undef # remove ctrl+s
 
-##### Exports #####
-
-# I get hassled by remote hosts about urxvt not being a valid term
-export TERM=xterm
-export AUTOFEATURE=true
-export AUTOTEST=true
-export RSPEC=true
-export RUBYOPT=rubygems
-export JRUBY_OPTS=--1.9
-export PATH=/usr/local/bin:$PATH:/home/michael/.gem/ruby/1.8/bin:/home/michael/bin:/home/michael/.local/bin:/home/michael/.cabal/bin:/opt/java/jre/bin
-export PAGER=less
-export BROWSER=google-chrome
-export CHROME_BIN=/usr/bin/$BROWSER
-export GOPATH=~/go
-
-# http://stackoverflow.com/questions/5570451/how-to-start-emacs-server-only-if-it-is-not-started
-export ALTERNATE_EDITOR=""
-export EDITOR="emacsclient -t"
-
 
 ##### Options #####
 unsetopt beep
@@ -155,3 +136,4 @@ export NVM_DIR="/home/michael/.nvm"
 eval "$(direnv hook zsh)"
 
 [[ -f "$HOME/dotfiles/per_machine_config.sh" ]] && source $HOME/dotfiles/per_machine_config.sh
+[[ -f "$HOME/.secrets" ]] && source $HOME/.secrets

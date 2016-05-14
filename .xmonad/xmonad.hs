@@ -12,7 +12,7 @@ main = xmonad gnomeConfig
        }
 
 overrideKeys (XConfig { modMask = modm}) = M.fromList $
-    [ ((modm, xK_p), spawn "dmenu_run")
+    [ ((modm, xK_p), spawn "$SHELL -c dmenu_run")
     , ((modm .|. controlMask, xK_w), spawn "xcalib -invert -alter -s 0")
     , ((modm .|. controlMask, xK_e), spawn "xcalib -invert -alter -s 1")
     , ((modm, xK_g), withFocused toggleBorder)
