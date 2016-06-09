@@ -88,6 +88,7 @@ source $HOME/.soostonerc
 export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 export PATH=$PATH:node_modules/.bin
 export PATH=$PATH:~/.cask/bin
+export PATH=$PATH:~/.local/bin
 
 alias a="ls -lrthG"
 
