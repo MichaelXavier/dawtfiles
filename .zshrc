@@ -138,3 +138,6 @@ eval "$(direnv hook zsh)"
 
 [[ -f "$HOME/dotfiles/per_machine_config.sh" ]] && source $HOME/dotfiles/per_machine_config.sh
 [[ -f "$HOME/.secrets" ]] && source $HOME/.secrets
+
+# stack
+export PATH=$HOME/.local/bin:$PATH
