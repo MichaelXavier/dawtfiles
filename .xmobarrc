@@ -2,7 +2,8 @@ Config {
   font         = "-*-terminus-*-*-*-*-12-*-*-*-*-*-*-u",
   bgColor     = "#000000",
   fgColor     = "#FFFFFF",
-  position =  Top L 100,
+  -- position =  Top L 100,
+  position = Static { xpos = 0 , ypos = 0, width = 1920, height = 25 },
   lowerOnStart = True,
   commands     = [
               Run Cpu ["<cpu0>/<cpu1>","-L","3","-H","50","-l","green","--normal","orange","--high","red"]   300,
