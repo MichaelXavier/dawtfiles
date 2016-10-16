@@ -134,8 +134,6 @@ export NIX_REMOTE=daemon
 export NVM_DIR="/home/michael/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-eval "$(direnv hook zsh)"
-
 [[ -f "$HOME/dotfiles/per_machine_config.sh" ]] && source $HOME/dotfiles/per_machine_config.sh
 [[ -f "$HOME/.secrets" ]] && source $HOME/.secrets
 
