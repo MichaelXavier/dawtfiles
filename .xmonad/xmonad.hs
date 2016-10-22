@@ -3,13 +3,18 @@ import           XMonad.Actions.NoBorders
 import           XMonad.Config.Gnome
 import qualified XMonad.StackSet          as W
 import           XMonad.Util.Dmenu
+import           XMonad.Util.SpawnOnce
 
 import qualified Data.Map                 as M
 
 main = xmonad gnomeConfig
        { modMask = mod4Mask
        , keys = overrideKeys <+> keys gnomeConfig
+       , startupHook = (startupHook gnomeConfig) >> myStartupHook
        }
+
+myStartupHook = do
+  spawnOnce "nm-applet"
 
 overrideKeys (XConfig { modMask = modm}) = M.fromList $
     [ ((modm, xK_p), spawn "$SHELL -c dmenu_run")
