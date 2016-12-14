@@ -1,0 +1,4 @@
+#!/bin/bash
+# Work around piece of shit 16.04 screensaver regression that will never get fixed
+# https://bugs.launchpad.net/ubuntu/+source/gnome-screensaver/+bug/1292041
+xset dpms force off; gnome-screensaver-command -l
