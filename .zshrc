@@ -139,3 +139,5 @@ export NVM_DIR="/home/michael/.nvm"
 
 # stack
 export PATH=$HOME/.local/bin:$HOME/.cabal/bin:$PATH
+
+[[ -f "$HOME/stack.sh" ]] && alias stack='$HOME/stack.sh'
