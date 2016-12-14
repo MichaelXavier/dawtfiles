@@ -138,4 +138,4 @@ export NVM_DIR="/home/michael/.nvm"
 [[ -f "$HOME/.secrets" ]] && source $HOME/.secrets
 
 # stack
-export PATH=$HOME/.local/bin:$PATH
+export PATH=$HOME/.local/bin:$HOME/.cabal/bin:$PATH
