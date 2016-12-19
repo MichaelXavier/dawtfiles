@@ -140,4 +140,8 @@ export NVM_DIR="/home/michael/.nvm"
 # stack
 export PATH=$HOME/.local/bin:$HOME/.cabal/bin:$PATH
 
+# stack hook if available
 [[ -f "$HOME/stack.sh" ]] && alias stack='$HOME/stack.sh'
+
+# direnv if available
+which direnv &>/dev/null && eval "$(direnv hook zsh)"
