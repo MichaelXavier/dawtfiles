@@ -1,0 +1,57 @@
+-- based off of https://gist.github.com/queertypes/625e05474e7b494ed43f26c5baa65220
+-- make psql really quiet while the next several commands are processed
+\set QUIET 1
+
+-- a colorful prompt that displays, in order:
+-- * hostname (green)
+-- * port number (yellow)
+-- * user (blue)
+-- * database (purple)
+-- in the format: host:port user@db#
+\set PROMPT1 '%[%033[1;32m%]%M:%[%033[1;33m%]%> %[%033[1;34m%]%n@%[%033[1;35m%]%/%R%[%033[0m%]%# '
+
+-- what's printed when more input is expected. set to nothing for now
+\set PROMPT2 ''
+
+-- print null values as '[nil]'
+\pset null '[nil]'
+
+-- make table output pretty as heck, but also print in record form when it's too big to fit in one line
+\pset linestyle unicode
+\pset border 2
+\pset format wrapped
+\x auto
+
+-- be verbose about commands and their errors/etc
+\set VERBOSITY verbose
+
+-- have a separate psql history file per database
+\set HISTFILE ~/.psql_history- :DBNAME
+
+-- ignore sequential duplicates in command history
+\set HISTCONTROL ignoredups
+
+-- auto-complete keywords in CAPS
+\set COMP_KEYWORD_CASE upper
+
+-- I forgot, honestly
+\set ON_ERROR_ROLLBACK interactive
+
+-- print timing statistics after every command
+\timing
+
+-- aliases
+-- > :version -- gives psql version output
+\set version    'SELECT version();;'
+
+-- > :extensions  -- lists all available extensions
+\set extensions 'SELECT * FROM pg_available_extensions;;'
+
+-- > :settings  -- shows all psql settings and their values
+\set settings   'SELECT name, setting,unit,context FROM pg_settings;;'
+
+-- > :uptime  -- how long has this thing been up?
+\set uptime     'SELECT now() - pg_postmaster_start_time() AS uptime;;'
+
+-- output to console again
+\unset QUIET
