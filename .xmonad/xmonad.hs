@@ -1,16 +1,16 @@
 import           XMonad
 import           XMonad.Actions.NoBorders
-import           XMonad.Config.Gnome
+import           XMonad.Config.Mate
 import qualified XMonad.StackSet          as W
 import           XMonad.Util.Dmenu
 import           XMonad.Util.SpawnOnce
 
 import qualified Data.Map                 as M
 
-main = xmonad gnomeConfig
+main = xmonad mateConfig
        { modMask = mod4Mask
-       , keys = overrideKeys <+> keys gnomeConfig
-       , startupHook = (startupHook gnomeConfig) >> myStartupHook
+       , keys = overrideKeys <+> keys mateConfig
+       , startupHook = (startupHook mateConfig) >> myStartupHook
        }
 
 myStartupHook = do
