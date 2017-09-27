@@ -3,5 +3,5 @@ hackagePath: /home/michael/.cabal/packages/hackage.haskell.org/
 tagsFileHeader: false
 tagsFileName: TAGS
 tagsFileSorted: false
-tagsCmd: hasktags --ctags --follow-symlinks --output="$TAGS" "$SOURCES"
+tagsCmd: hasktags --etags --follow-symlinks --output="$TAGS" "$SOURCES"
 stackOpts: ''
