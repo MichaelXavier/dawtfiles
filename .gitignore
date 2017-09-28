@@ -1,7 +1,7 @@
 *.errors
 *.hi
 *.hs.*
-xmonad-*
+xmonad-x86_64-linux
 *.o
 *.swp
 *.swo
@@ -19,3 +19,4 @@ dist0/
 .dir-locals.el
 .stack-work/
 per_machine_config.sh
+/.xmonad/xmonad.hs
