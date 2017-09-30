@@ -20,3 +20,4 @@ dist0/
 .stack-work/
 per_machine_config.sh
 /.xmonad/xmonad.hs
+/.xmonad/xmonad
