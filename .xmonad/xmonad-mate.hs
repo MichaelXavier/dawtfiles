@@ -11,6 +11,7 @@ main = xmonad mateConfig
        { modMask = mod4Mask
        , keys = overrideKeys <+> keys mateConfig
        , startupHook = (startupHook mateConfig) >> myStartupHook
+       , terminal = "gnome-terminal"
        }
 
 myStartupHook = do
