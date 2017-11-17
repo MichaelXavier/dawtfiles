@@ -145,3 +145,4 @@ export PATH=$HOME/.local/bin:$HOME/.cabal/bin:$PATH
 
 # direnv if available
 which direnv &>/dev/null && eval "$(direnv hook zsh)"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
