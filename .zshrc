@@ -67,6 +67,7 @@ alias cabalupgrades="cabal list --installed  | egrep -iv '(synopsis|homepage|lic
 alias wgeto='wget -qO-'
 alias mixer='alsamixer'
 alias diskusage='gdmap'
+alias octal='stat -c "%a %n" '
 
 alias hoogle="hoogle --color"
 
