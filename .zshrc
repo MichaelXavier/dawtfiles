@@ -123,9 +123,6 @@ function g {
 }
 compdef g=git
 
-##### Bower #####
-alias bower='noglob bower'
-
 export NPROCS=`nproc`
 export MAKEFLAGS="-j $NPROCS --load-average=$NPROCS"
 ##### Nix #####
