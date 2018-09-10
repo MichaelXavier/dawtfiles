@@ -159,3 +159,5 @@ if [ -f '/home/michael/Downloads/google-cloud-sdk/path.zsh.inc' ]; then source '
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/home/michael/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then source '/home/michael/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+
+PATH=/opt/ghc/8.4.3/bin:$PATH
