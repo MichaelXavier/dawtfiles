@@ -154,6 +154,12 @@ function portforward {
     ssh -nNT -L $dest:$host:$src $sshhost
 }
 
+function killline {
+    lineno=$1
+    file=$2
+    sed -ie "${lineno}d" $file
+}
+
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/home/michael/Downloads/google-cloud-sdk/path.zsh.inc' ]; then source '/home/michael/Downloads/google-cloud-sdk/path.zsh.inc'; fi
 
