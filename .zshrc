@@ -167,3 +167,6 @@ if [ -f '/home/michael/Downloads/google-cloud-sdk/path.zsh.inc' ]; then source '
 if [ -f '/home/michael/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then source '/home/michael/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
 
 PATH=/opt/ghc/8.4.3/bin:$PATH
+
+# added by Anaconda3 installer
+export PATH="/home/michael/anaconda3/bin:$PATH"
