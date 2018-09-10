@@ -135,8 +135,8 @@ export NVM_DIR="/home/michael/.nvm"
 [[ -f "$HOME/dotfiles/per_machine_config.sh" ]] && source $HOME/dotfiles/per_machine_config.sh
 [[ -f "$HOME/.secrets" ]] && source $HOME/.secrets
 
-# stack
-export PATH=$HOME/.local/bin:$HOME/.cabal/bin:$PATH
+# prioritize cabal over stack bins
+export PATH=$HOME/.cabal/bin:$PATH:$HOME/.local/bin
 
 # stack hook if available
 [[ -f "$HOME/stack.sh" ]] && alias stack='$HOME/stack.sh'
