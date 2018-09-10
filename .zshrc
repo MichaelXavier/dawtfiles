@@ -136,7 +136,7 @@ export NVM_DIR="/home/michael/.nvm"
 [[ -f "$HOME/.secrets" ]] && source $HOME/.secrets
 
 # prioritize cabal over stack bins
-export PATH=$HOME/.cabal/bin:$PATH:$HOME/.local/bin
+export PATH=$HOME/.cabal/bin:$HOME/.local/bin:$PATH
 
 # stack hook if available
 [[ -f "$HOME/stack.sh" ]] && alias stack='$HOME/stack.sh'
