@@ -135,8 +135,6 @@ export NVM_DIR="/home/michael/.nvm"
 [[ -f "$HOME/dotfiles/per_machine_config.sh" ]] && source $HOME/dotfiles/per_machine_config.sh
 [[ -f "$HOME/.secrets" ]] && source $HOME/.secrets
 
-# prioritize cabal over stack bins
-export PATH=$HOME/.cabal/bin:$HOME/.local/bin:$PATH
 
 # stack hook if available
 [[ -f "$HOME/stack.sh" ]] && alias stack='$HOME/stack.sh'
@@ -160,6 +158,10 @@ function killline {
     sed -ie "${lineno}d" $file
 }
 
+function domodify {
+    while inotifywait --quiet --event modify "${@:2}"; do zsh -c "$1"; done
+}
+
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/home/michael/Downloads/google-cloud-sdk/path.zsh.inc' ]; then source '/home/michael/Downloads/google-cloud-sdk/path.zsh.inc'; fi
 
@@ -170,3 +172,6 @@ PATH=/opt/ghc/8.4.3/bin:$PATH
 
 # added by Anaconda3 installer
 export PATH="/home/michael/anaconda3/bin:$PATH"
+
+# prioritize cabal over stack bins
+export PATH=$HOME/.cabal/bin:$HOME/.local/bin:$PATH
