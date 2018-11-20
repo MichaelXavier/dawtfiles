@@ -1,1 +1,5 @@
-:set prompt "\ESC[1;34m%s\n\ESC[0;34mλ> \ESC[m"
+:set +s +t
+:set -package pretty-simple
+import Text.Pretty.Simple (pPrint)
+:set -interactive-print pPrint
+:set prompt "> "
