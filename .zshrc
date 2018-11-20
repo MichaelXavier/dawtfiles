@@ -162,6 +162,10 @@ function domodify {
     while inotifywait --quiet --event modify "${@:2}"; do zsh -c "$1"; done
 }
 
+function octal {
+    stat -c "%a %n" $1
+}
+
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/home/michael/Downloads/google-cloud-sdk/path.zsh.inc' ]; then source '/home/michael/Downloads/google-cloud-sdk/path.zsh.inc'; fi
 
