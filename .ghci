@@ -1,5 +1,2 @@
 :set +s +t
-:set -package pretty-simple
-import Text.Pretty.Simple (pPrint)
-:set -interactive-print pPrint
 :set prompt "> "
