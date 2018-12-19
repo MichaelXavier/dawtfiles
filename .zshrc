@@ -125,9 +125,6 @@ compdef g=git
 
 export NPROCS=`nproc`
 export MAKEFLAGS="-j $NPROCS --load-average=$NPROCS"
-##### Nix #####
-export NIX_REMOTE=daemon
-[[ -f "/etc/profile.d/nix.sh" ]] && source /etc/profile.d/nix.sh
 
 export NVM_DIR="/home/michael/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
