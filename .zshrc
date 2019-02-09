@@ -177,4 +177,4 @@ export PATH="/home/michael/anaconda3/bin:$PATH"
 # prioritize cabal over stack bins
 export PATH=$HOME/.cabal/bin:$HOME/.local/bin:$PATH
 # nix if available
-[[ -f "~/.nix-profile/etc/profile.d/nix.sh" ]] && source ~/.nix-profile/etc/profile.d/nix.sh
+[[ -f "$HOME/.nix-profile/etc/profile.d/nix.sh" ]] && . $HOME/.nix-profile/etc/profile.d/nix.sh
