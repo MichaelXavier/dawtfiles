@@ -178,3 +178,5 @@ export PATH="/home/michael/anaconda3/bin:$PATH"
 export PATH=$HOME/.cabal/bin:$HOME/.local/bin:$PATH
 # nix if available
 [[ -f "$HOME/.nix-profile/etc/profile.d/nix.sh" ]] && . $HOME/.nix-profile/etc/profile.d/nix.sh
+
+export PATH=$PATH:/usr/local/go/bin
