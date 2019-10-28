@@ -180,3 +180,10 @@ export PATH=$HOME/.cabal/bin:$HOME/.local/bin:$PATH
 [[ -f "$HOME/.nix-profile/etc/profile.d/nix.sh" ]] && . $HOME/.nix-profile/etc/profile.d/nix.sh
 
 export PATH=$PATH:/usr/local/go/bin
+
+# https://stackoverflow.com/a/8363532
+case "$TERM" in
+"dumb")
+    PS1="> "
+    ;;
+esac
