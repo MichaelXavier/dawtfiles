@@ -31,7 +31,7 @@ fi
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(gem git)
+plugins=(gem git rsync)
 
 source $ZSH/oh-my-zsh.sh
 
