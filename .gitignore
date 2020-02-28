@@ -22,3 +22,4 @@ per_machine_config.sh
 /.xmonad/xmonad.hs
 /.xmonad/xmonad
 /.xmonad/xmonad.state
+/.xmonad/result
