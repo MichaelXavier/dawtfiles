@@ -11,7 +11,7 @@ main = xmonad mateConfig
        { modMask = mod4Mask
        , keys = overrideKeys <+> keys mateConfig
        , startupHook = (startupHook mateConfig) >> myStartupHook
-       , terminal = "mate-terminal"
+       , terminal = "alacritty"
        }
 
 myStartupHook = do
