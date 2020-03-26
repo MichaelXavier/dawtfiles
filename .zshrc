@@ -8,11 +8,7 @@ ZSH=$HOME/.oh-my-zsh
 #ZSH_THEME="gallois" # like it
 #ZSH_THEME="kolo" # like it but incomplete path
 
-if [ -n "$INSIDE_EMACS" ]; then
-    export ZSH_THEME="robbyrussell"
-else
-    export ZSH_THEME="kolo"
-fi
+export ZSH_THEME="bira"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
