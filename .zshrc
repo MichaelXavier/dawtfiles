@@ -59,7 +59,7 @@ function ghc-pkg-reset() {
 
 alias cabalupgrades="cabal list --installed  | egrep -iv '(synopsis|homepage|license)'"
 
-##### Aliases ##### 
+##### Aliases #####
 alias wgeto='wget -qO-'
 alias mixer='alsamixer'
 alias diskusage='gdmap'
@@ -123,7 +123,8 @@ export NPROCS=`nproc`
 export MAKEFLAGS="-j $NPROCS --load-average=$NPROCS"
 
 export NVM_DIR="/home/michael/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" --no-use  # This loads nvm but doesn't auto exec use, which is pretty slow
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 [[ -f "$HOME/dotfiles/per_machine_config.sh" ]] && source $HOME/dotfiles/per_machine_config.sh
 [[ -f "$HOME/.secrets" ]] && source $HOME/.secrets
@@ -134,7 +135,6 @@ export NVM_DIR="/home/michael/.nvm"
 
 # direnv if available
 which direnv &>/dev/null && eval "$(direnv hook zsh)"
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 
 function portforward {
