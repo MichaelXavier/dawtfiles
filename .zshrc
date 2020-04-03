@@ -178,6 +178,7 @@ export PATH=$HOME/.cabal/bin:$HOME/.local/bin:$PATH
 export PATH=$PATH:/usr/local/go/bin:$HOME/.cargo/bin
 
 # https://stackoverflow.com/a/8363532
+# Give dumb terminals a simple prompt so they don't choke on it
 case "$TERM" in
 "dumb")
     PS1="> "
