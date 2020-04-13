@@ -1,2 +1,2 @@
 # Ignore the git dir
---glob=!git/*
+--glob=!.git/*
