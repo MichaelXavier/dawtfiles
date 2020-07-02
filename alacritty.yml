@@ -23,15 +23,15 @@ colors:
     foreground: "0xd3d7cf"
 font:
   normal:
-    family: Ubuntu Mono Nerd Font
+    family: Ubuntu Mono
     style: Regular
   bold:
-    family: Ubuntu Mono Nerd Font
+    family: Ubuntu Mono
     style: Bold
   italic:
-    family: Ubuntu Mono Nerd Font
+    family: Ubuntu Mono
     style: Italic
   bold_italic:
-    family: Ubuntu Mono Nerd Font
+    family: Ubuntu Mono
     style: Bold Italic
   size: 13.0
