@@ -1,2 +1,5 @@
 # Ignore the git dir
 --glob=!.git/*
+
+# Ignore git's commondir
+--glob=!*commondir*
