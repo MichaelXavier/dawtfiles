@@ -1,0 +1,19 @@
+/*
+https://gist.github.com/collinbarrett/45c90f7d427e08d69d32dfef402c86f6
+
+Removes the top tab bar in favor of tree style tabs.
+
+~/.mozilla/firefox/XXXXXXXX.dev-edition-default/chrome/userChrome.css:
+*/
+
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+/* Hide horizontal tab toolbar */
+#TabsToolbar {
+    visibility:collapse!important;
+}
+
+/* Hide "Tree Style Tabs" sidebar header */
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] #sidebar-header {
+    display:none;
+}
